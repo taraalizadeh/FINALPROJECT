@@ -8,7 +8,7 @@ This dataset highlights the individual complaints filed against each financial i
    1. **Companies of Complaints**: What companies had the most complaints filed against them?
    2. **Locations of Complaints**: Did consumers in particular areas seem to complain more about specific things?
    3. **Resolutions of Complaints**: Which companies or types of complaints tended to be resolved most effectively?
-3. Analyze the dataset by first naming and creating the dataset (CREATE DATABASE final_project) (USE finalproject)
+3. Analyze the dataset by first naming and creating the dataset (`CREATE DATABASE final_project`) (`USE finalproject`)
 ### RESULTS
 1. **QUERY 1**
          `select company, COUNT(company) AS most_complaints from data where company != ""`
