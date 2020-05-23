@@ -9,22 +9,6 @@ This dataset highlights the individual complaints filed against each financial i
    2. **Locations of Complaints**: Did consumers in particular areas seem to complain more about specific things?
    3. **Resolutions of Complaints**: Which companies or types of complaints tended to be resolved most effectively?
 3. Analyze the dataset by first naming and creating the dataset (`CREATE DATABASE final_project`) (`USE finalproject`)
-### RESULTS
-1. **QUERY 1**
-         `select company, COUNT(company) AS most_complaints from data where company != ""`
-         `GROUP BY company`
-         `ORDER BY COUNT(company) DESC`
-         `LIMIT 10;`
-2. **QUERY 2**
-         `select state_name, COUNT(state_name) AS most_complaints from data where state_name != "" && state_name NOT LIKE '%LL%' && state_name NOT LIKE '%Inc%' `
-         `GROUP BY state_name`
-         `ORDER BY COUNT(state_name) DESC`
-         `LIMIT 15;`
-3. **QUERY 3** 
-         `select company, COUNT(company) AS most_resolutionms from data where timely_response = "Yes" and consumer_disputer = "No"`
-         `GROUP BY company`
-         `ORDER BY COUNT(company) DESC`
-         `LIMIT 10;`
 ### SUMMARY OF FINDINGS
 The code for query 1 highlighted that the following ten companies contained the most number of complaints filed against them (in descending order).
   * Experian (4131)
